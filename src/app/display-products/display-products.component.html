@@ -3,7 +3,7 @@
       <h1>{{product.Name}}</h1>
       <p>{{product.Description}}</p>
       <p>{{product.Price}}</p>
-      <button>Delete</button>
+      <button (click)="deleteProduct(product.Id)">Delete</button>
 
     </div>
 

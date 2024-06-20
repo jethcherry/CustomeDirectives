@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-display-products',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule ],
   templateUrl: './display-products.component.html',
   styleUrl: './display-products.component.css'
 })
@@ -19,6 +19,10 @@ export class DisplayProductsComponent implements OnInit {
    ngOnInit(): void {
        this.products =this.ps.getProducts();
        
+   }
+   deleteProduct(Id:number){
+    this.ps.deleteProduct(Id)
+
    }
 
   
