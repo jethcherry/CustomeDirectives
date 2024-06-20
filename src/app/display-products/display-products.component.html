@@ -1,0 +1,10 @@
+<div *ngIf = "products">
+    <div *ngFor=" let product of products">
+      <h1>{{product.Name}}</h1>
+      <p>{{product.Description}}</p>
+      <p>{{product.Price}}</p>
+      <button>Delete</button>
+
+    </div>
+
+</div>
