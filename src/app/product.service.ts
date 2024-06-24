@@ -41,14 +41,14 @@ export class ProductService {
   }
   deleteProduct(id:number){
     let index = this.products.findIndex(x=>x.Id===id)
-    if(index>0){
+    if(index>=0){
       this.products.splice(index,1)
     }
   }
 
   updateProduct(id:number,updatedProduct:Product){
     let index = this.products.findIndex(x=>x.Id===id)
-    if(index>=0){
+    if(index >=0){
       this.products[index] = updatedProduct
     }
   }
